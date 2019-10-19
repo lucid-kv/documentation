@@ -28,8 +28,8 @@ JWT Token to ensure the authentication
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="Raw Body" type="string" required=false %}
-Raw body or binary body accepted
+{% api-method-parameter name="Raw Body" type="string" required=true %}
+Raw body or binary file accepted
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
