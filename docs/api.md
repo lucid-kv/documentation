@@ -4,6 +4,57 @@ description: The Lucid API is the logical interface used to interact with a node
 
 # API Documentation
 
+{% api-method method="get" host="https://localhost:7021" path="/api/kv/:key" %}
+{% api-method-summary %}
+Get Data
+{% endapi-method-summary %}
+
+{% api-method-description %}
+This endpoint allows you to get data associated with a key.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="key" type="string" required=true %}
+Key of the data to get
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+API authentification JSON Web Token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+hello world
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```json
+{
+  "message": "The specified key does not exists."
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
 {% api-method method="put" host="https://localhost:7021" path="/api/kv/:key" %}
 {% api-method-summary %}
 Store Data \(Create & Update\)
@@ -86,55 +137,6 @@ Data was successfully created.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://localhost:7021" path="/api/kv/:key" %}
-{% api-method-summary %}
-Get Data
-{% endapi-method-summary %}
-
-{% api-method-description %}
-This endpoint allows you to get data associated with a key.
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="key" type="string" required=true %}
-Key of the data to get
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-API authentification JSON Web Token
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-hello world
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```json
-{
-  "message": "The specified key does not exists."
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
 
 {% api-method method="delete" host="https://localhost:7021" path="/api/kv/:key" %}
 {% api-method-summary %}
@@ -200,6 +202,7 @@ API authentification JSON Web Token
 {% endapi-method-spec %}
 {% endapi-method %}
 
+
 {% api-method method="head" host="https://localhost:7021" path="/api/kv/:key" %}
 {% api-method-summary %}
 Check key initialization
@@ -263,6 +266,7 @@ The specified key exists.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
 
 {% api-method method="patch" host="https://localhost:7021" path="/api/kv/:key" %}
 {% api-method-summary %}
