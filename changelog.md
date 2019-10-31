@@ -1,5 +1,5 @@
 ---
-description: All the changes added to Lucid.
+description: Lucid versions changelog.
 ---
 
 # Changelog
@@ -12,6 +12,3 @@ description: All the changes added to Lucid.
 * JWT generation
 * Server base with API and WebUI endpoints
 * Configuration files handling
-
-
-

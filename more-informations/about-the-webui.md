@@ -1,12 +1,14 @@
 ---
-description: Lucid embed a Vue-JS dashboard to allows you to manage the node.
+description: Lucid embeds a Web UI written in Vue.js. It's a dashboard made to easily manage your node.
 ---
 
 # About the WebUI
 
 ## Introduction
 
-Lucid will embed a beautiful dashboard created in [VueJS](http://vuejs.org) to easily manage your node, by example:
+Lucid embeds a useful dashboard created in [Vue.js](http://vuejs.org) to easily manage your node.
+
+This dashboard allows you, for example, to:
 
 * Handle Stored Data
 * Issue Authentication Tokens
@@ -14,4 +16,3 @@ Lucid will embed a beautiful dashboard created in [VueJS](http://vuejs.org) to e
 * Manage ACLs or Encryption
 
 ![Screenshot of Marathon Software](../.gitbook/assets/screenshot-2016-10-17-10.47.37.png)
-

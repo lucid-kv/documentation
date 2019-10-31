@@ -17,4 +17,3 @@
 ## Other Resources
 
 * [Github Repository](https://github.com/clintnetwork/lucid)
-

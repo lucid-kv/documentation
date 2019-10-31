@@ -6,7 +6,7 @@ description: High performance and distributed KV store accessible through an HTT
 
 ### Introduction
 
-Lucid is currently in an embryonic state but we wish to achieve a fast, secure and distributed key-value store accessible through an HTTP API, we also want to propose persistence, encryption, WebSocket streaming, replication and a lot of features.
+Lucid is currently in an embryonic state. We hope to achieve a fast, secure and distributed key-value store accessible through an HTTP API. We also want to offer persistence, encryption, WebSocket streaming, replication and a lot of other features.
 
 ### Works Progress
 
@@ -47,4 +47,3 @@ Lucid is Written in Rust 🦀, powered by [Clint.Network](https://twitter.com/cl
 * [![btc](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/bitcoin.png)](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/bitcoin.png) Bitcoin: 3AEqgvpiHC2LzPDunf6PBPBLeT98YruKmg
 
 {% embed url="https://github.com/clintnetwork/lucid" caption="Official GitHub Repository" %}
-

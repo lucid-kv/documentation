@@ -1,5 +1,5 @@
 ---
-description: The Lucid API is available on the port 7021.
+description: The Lucid API is the logical interface used to interact with a node. By default, your node's server listens on port 7021.
 ---
 
 # API Documentation
@@ -10,7 +10,7 @@ Store Data \(Create & Update\)
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you store a new data with a specific key.
+This endpoint allows you store data at a specific key. If the key is not used yet, it will be created.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -23,13 +23,13 @@ Key of the value to store
 
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-JWT Token to ensure the authentication
+API authentification JSON Web Token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="Raw Body" type="string" required=true %}
-Raw body or binary file accepted
+Raw body (Plain text, JSON, ...) or raw binary content
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -37,24 +37,24 @@ Raw body or binary file accepted
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Data successfully updated.
+Data was successfully updated.
 {% endapi-method-response-example-description %}
 
-```javascript
+```json
 {
-    "message": "The specified key was successfully updated."
+  "message": "The specified key was successfully updated."
 }
 ```
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=201 %}
 {% api-method-response-example-description %}
-Date successfully created.
+Data was successfully created.
 {% endapi-method-response-example-description %}
 
-```javascript
+```json
 {
-    "message": "The specified key was successfully created."
+  "message": "The specified key was successfully created."
 }
 ```
 {% endapi-method-response-example %}
@@ -64,9 +64,9 @@ Date successfully created.
 
 {% endapi-method-response-example-description %}
 
-```javascript
+```json
 {
-    "message": "You are not allowed to perform this action."
+  "message": "You are not allowed to perform this action."
 }
 ```
 {% endapi-method-response-example %}
@@ -76,9 +76,9 @@ Date successfully created.
 
 {% endapi-method-response-example-description %}
 
-```javascript
+```json
 {
-    "message": "The specified key cannot be updated."
+  "message": "The specified key cannot be updated."
 }
 ```
 {% endapi-method-response-example %}
@@ -92,7 +92,7 @@ Get Data
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get a data by his key.
+This endpoint allows you to get data associated with a key.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -105,7 +105,7 @@ Key of the data to get
 
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-JWT Token to ensute the authentication
+API authentification JSON Web Token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 {% endapi-method-request %}
@@ -126,9 +126,9 @@ hello world
 
 {% endapi-method-response-example-description %}
 
-```javascript
+```json
 {
-    "message": "The specified key does not exists."
+  "message": "The specified key does not exists."
 }
 ```
 {% endapi-method-response-example %}
@@ -142,7 +142,7 @@ Delete Data
 {% endapi-method-summary %}
 
 {% api-method-description %}
-His endpoint allows you to drop a data by his key.
+This endpoint allows you to delete an existing key with its associated data.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -155,7 +155,7 @@ Key of the data to remove
 
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-JWT Token to ensure the authentication
+API authentification JSON Web Token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 {% endapi-method-request %}
@@ -166,8 +166,10 @@ JWT Token to ensure the authentication
 
 {% endapi-method-response-example-description %}
 
-```
-
+```json
+{
+  "message": "The specified key and its data was successfully deleted."
+}
 ```
 {% endapi-method-response-example %}
 
@@ -176,9 +178,9 @@ JWT Token to ensure the authentication
 
 {% endapi-method-response-example-description %}
 
-```javascript
+```json
 {
-    "message": "You are not allowed to perform this action."
+  "message": "You are not allowed to perform this action."
 }
 ```
 {% endapi-method-response-example %}
@@ -188,9 +190,9 @@ JWT Token to ensure the authentication
 
 {% endapi-method-response-example-description %}
 
-```javascript
+```json
 {
-    "message": "The specified key does not exists."
+  "message": "The specified key does not exists."
 }
 ```
 {% endapi-method-response-example %}
@@ -200,11 +202,11 @@ JWT Token to ensure the authentication
 
 {% api-method method="head" host="https://localhost:7021" path="/api/kv/:key" %}
 {% api-method-summary %}
-Check for Data Existence
+Check key initialization
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Check if a data exists in the Lucid node.
+Check if a key was initialized in the Lucid node.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -217,7 +219,7 @@ Key of the data to check
 
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=false %}
-JWT Token to ensure the authentication
+API authentification JSON Web Token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 {% endapi-method-request %}
@@ -225,11 +227,13 @@ JWT Token to ensure the authentication
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-The specified key exists
+The specified key exists.
 {% endapi-method-response-example-description %}
 
-```text
-
+```json
+{
+  "message": "The specified key is initialized."
+}
 ```
 {% endapi-method-response-example %}
 
@@ -238,9 +242,9 @@ The specified key exists
 
 {% endapi-method-response-example-description %}
 
-```javascript
+```json
 {
-    "message": "You are not allowed to perform this action."
+  "message": "You are not allowed to perform this action."
 }
 ```
 {% endapi-method-response-example %}
@@ -250,9 +254,9 @@ The specified key exists
 
 {% endapi-method-response-example-description %}
 
-```javascript
+```json
 {
-    "message": "The specified key does not exists."
+  "message": "The specified key does not exists."
 }
 ```
 {% endapi-method-response-example %}
@@ -279,7 +283,7 @@ Key of the data to operate
 
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-JWT Token to ensure the authentication
+API authentification JSON Web Token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
@@ -303,4 +307,3 @@ Operation to perform \(lock, unlock etc\)
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-

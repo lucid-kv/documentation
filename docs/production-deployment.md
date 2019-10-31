@@ -1,12 +1,12 @@
 ---
-description: This is how to deploy a lucid node on a production server.
+description: Lucid node production deployement guide.
 ---
 
 # Production Deployment
 
 ## Download and Install
 
-You need to download, and copy the `lucid` binary into the `/usr/bin/` folder.
+You need to download and copy the `lucid` binary to the `/usr/bin/` directory. See [latest Github release](https://github.com/clintnetwork/lucid/releases/latest).
 
 ```bash
 $ wget https://xxxx/lucid.tar.gz
@@ -17,7 +17,7 @@ $ rm -rf lucid.tar.gz
 
 ## Create a Systemd Service
 
-To create a systemd service you need to create a new file like this:
+To create a systemd service you need to create the following file.
 
 ```text
 $ nano /etc/systemd/system/lucid.service
@@ -45,4 +45,3 @@ WantedBy=multi-user.target
 $ systemctl enable lucid
 $ systemctl start lucid
 ```
-

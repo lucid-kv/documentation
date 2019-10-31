@@ -1,12 +1,12 @@
 ---
-description: This is the begining guide for a Linux user.
+description: This is the start guide for a Linux user.
 ---
 
 # Getting Started
 
 ## Download the Archive
 
-Firsly, you need to download and extract the archive from GitHub.
+Firstly, download and extract the archive from the latest [GitHub release](https://github.com/clintnetwork/lucid/releases/latest).
 
 ```bash
 $ wget https://xxxx/lucid.tar.gz
@@ -15,7 +15,7 @@ $ tar -xvf lucid.tar.gz
 
 ## First Launch
 
-Once you have downloaded the binary, you can run the help command like this:
+Once you have downloaded the binary, you can run the help command.
 
 ```bash
 $ ./lucid help
@@ -48,4 +48,3 @@ SUBCOMMANDS:
     store       Play with the KV store (get/set)
     tokens      Manage JWT Tokens (issue, revoke etc.)
 ```
-

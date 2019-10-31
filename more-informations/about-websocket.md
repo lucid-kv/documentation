@@ -1,16 +1,13 @@
 ---
-description: Why we want to support WebSockets in Lucid ?
+description: Why do we want to support WebSockets in Lucid for ?
 ---
 
 # About WebSocket
 
 ## Introduction
 
-From the begining, we want to add a websocket support to Lucid, to broadcast any changes brought to the store.
+From the begining, we want to add a WebSocket support to Lucid. This will be useful to stream store's changes.
 
 ### WebSocket vs EventSource ?
 
-For the moment we do not have chosen and we give ourselves the time to do it
-
-
-
+At the moment we do not have chosen and we give ourselves the time to think about it.
