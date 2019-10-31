@@ -230,7 +230,7 @@ API authentification JSON Web Token
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-The specified key exists.
+The specified key is initialized.
 {% endapi-method-response-example-description %}
 
 ```json
