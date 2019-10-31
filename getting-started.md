@@ -9,8 +9,8 @@ description: This is the start guide for a Linux user.
 Firstly, download and extract the archive from the latest [GitHub release](https://github.com/clintnetwork/lucid/releases/latest).
 
 ```bash
-$ wget https://xxxx/lucid.tar.gz
-$ tar -xvf lucid.tar.gz
+$ wget https://github.com/clintnetwork/lucid/releases/latest/download/lucid.zip
+$ tar -xvf lucid.zip
 ```
 
 ## First Launch

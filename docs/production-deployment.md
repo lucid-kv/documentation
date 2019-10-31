@@ -9,10 +9,10 @@ description: Lucid node production deployement guide.
 You need to download and copy the `lucid` binary to the `/usr/bin/` directory. See [latest Github release](https://github.com/clintnetwork/lucid/releases/latest).
 
 ```bash
-$ wget https://xxxx/lucid.tar.gz
-$ tar -xvf lucid.tar.gz
+$ wget https://github.com/clintnetwork/lucid/releases/latest/download/lucid.zip
+$ tar -xvf lucid.zip
 $ mv lucid /usr/bin/
-$ rm -rf lucid.tar.gz
+$ rm -rf lucid.zip
 ```
 
 ## Create a Systemd Service
