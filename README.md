@@ -1,34 +1,32 @@
 ---
-description: High performance and distributed KV store accessible through an HTTP API.
+description: "High performance and distributed KV store accessible through an HTTP API. \U0001F980"
 ---
 
 # About Lucid ᵏᵛ
 
-### Introduction
+## Introduction
 
-Lucid is currently in an embryonic state. We hope to achieve a fast, secure and distributed key-value store accessible through an HTTP API. We also want to offer persistence, encryption, WebSocket streaming, replication and a lot of other features.
+Lucid is currently in a development stage but we want to achieve a fast, secure and distributed key-value store accessible through an HTTP API, we also want to propose persistence, encryption, WebSocket streaming, replication and a lot of features.
 
-### Works Progress
+### Getting Started
 
-{% hint style="warning" %}
-Warning: Empty project for now, the development is ensured in the [development](https://github.com/clintnetwork/lucid/tree/development) branch.
-{% endhint %}
+Get the latest binary from the [releases](https://github.com/lucid-kv/lucid/releases) page and run these commands:
 
-*  Minimum Viable Product \(MVP\)
-  * Initialization process
-  * Configuration files handling
-  * JWT token Issuing
-  * HTTPS Support
-  * KV Store
-  *  Rest API
-    *  JWT Authentication
-*  WebUI in [VueJS](https://vuejs.org/)
-*  Persistence
-*  Encryption on the Fly \(AES-256\)
-*  Access Control List \(ACL\)
-*  WebSocket or Event Source \(SSE\)
+```text
+$ ./lucid init
+$ ./lucid server
+```
 
-### Some Use Cases
+Or run a node with Docker, but you need to create a [lucid.yml](https://github.com/lucid-kv/lucid/blob/master/.github/lucid.yml) file locally before.
+
+```text
+$ docker pull lucidkv/lucid
+$ docker run -v lucid.yml:/etc/lucid/lucid.yml lucidkv/lucid
+```
+
+{% page-ref page="getting-started.md" %}
+
+## Some Use Cases
 
 * Private Keys Storing \(for a wallet by example\)
 * IoT: collect and save statistics data
@@ -37,13 +35,25 @@ Warning: Empty project for now, the development is ensured in the [development](
 * Distributed Configuration
 * Blob Storage
 
-### About the Author
+## Development Credits
 
 Lucid is Written in Rust 🦀, powered by [Clint.Network](https://twitter.com/clint_network) and published under the [MIT License](https://github.com/clintnetwork/lucid/blob/master/LICENSE.md).
 
-**Donate to Clint.Network**
+| Name / Nickname | Email | Role |
+| :--- | :--- | :--- |
+| Clint Mourlevat | [me@clint.network](mailto:me@clint.network) | Lucid Founder |
+| Jonathan Serra | [jonathan@blocs.fr](mailto:jonathan@blocs.fr) | Core Development |
+| CephalonRho | [CephalonRho@gmail.com](mailto:CephalonRho@gmail.com) | Core Development |
+| Rigwild | [me@rigwild.dev](mailto:me@rigwild.dev) | Web UI Development |
+
+### **Donate to Clint.Network**
 
 * [![Paypal](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/paypal.png)](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/paypal.png) Paypal: [Donate](http://paypal.me/clintnetwork)
-* [![btc](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/bitcoin.png)](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/bitcoin.png) Bitcoin: 3AEqgvpiHC2LzPDunf6PBPBLeT98YruKmg
+* [![btc](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/bitcoin.png)](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/bitcoin.png) Bitcoin: 3BxEYn4RZ3iYETcFpN7nA6VqCY4Hz1tSUK
 
-{% embed url="https://github.com/clintnetwork/lucid" caption="Official GitHub Repository" %}
+### Contribute to Lucid
+
+See [CONTRIBUTING.md](https://github.com/lucid-kv/lucid/blob/master/CONTRIBUTING.md) for best practices and instructions on setting up your development environment to work on Lucid.
+
+{% embed url="https://github.com/lucid-kv" %}
+
