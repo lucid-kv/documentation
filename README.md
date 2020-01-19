@@ -14,7 +14,7 @@ Get the latest binary from the [releases](https://github.com/lucid-kv/lucid/rele
 
 ```text
 $ ./lucid init
-$ ./lucid server
+$ ./lucid --config lucid.yml server
 ```
 
 Or run a node with Docker, but you need to create a [lucid.yml](https://github.com/lucid-kv/lucid/blob/master/.github/lucid.yml) file locally before.
