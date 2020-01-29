@@ -8,6 +8,8 @@ description: "High performance and distributed KV store accessible through an HT
 
 Lucid is currently in a development stage but we want to achieve a fast, secure and distributed key-value store accessible through an HTTP API, we also want to propose persistence, encryption, WebSocket streaming, replication and a lot of features.
 
+**Some Uses Cases:** Private Keys Storing, IoT \(to collect and save statistics data\), Distributed Cache, Service Discovery, Distributed Configuration, Blob Storage etc.
+
 ### Getting Started
 
 Get the latest binary from the [releases](https://github.com/lucid-kv/lucid/releases) page and run these commands:
