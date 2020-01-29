@@ -221,11 +221,14 @@ Coming soon
 {
   "message": "The specified key does not exists."
 }
+
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% page-ref page="docs/api.md" %}
 
 ## Some Use Cases
 
@@ -236,7 +239,7 @@ Coming soon
 * Distributed Configuration
 * Blob Storage
 
-## Development Credits
+## About Development
 
 Lucid is Written in Rust 🦀, powered by [Clint.Network](https://twitter.com/clint_network) and published under the [MIT License](https://github.com/clintnetwork/lucid/blob/master/LICENSE.md).
 
