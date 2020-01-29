@@ -16,4 +16,6 @@
 
 ## Other Resources
 
-* [Github Repository](https://github.com/clintnetwork/lucid)
+* [Lucid KV Website](https://lucid-kv.store/)
+* [Github Repository](https://github.com/lucid-kv/lucid)
+
