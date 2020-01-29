@@ -1,5 +1,7 @@
 ---
-description: The Lucid API is the logical interface used to interact with a node. By default, your node's server listens on port 7021.
+description: >-
+  The Lucid API is the logical interface used to interact with a node. By
+  default, your node's server listens on port 7021.
 ---
 
 # API Documentation
@@ -34,7 +36,7 @@ API authentification JSON Web Token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 hello world
 ```
 {% endapi-method-response-example %}
@@ -44,7 +46,7 @@ hello world
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "message": "The specified key does not exists."
 }
@@ -53,7 +55,6 @@ hello world
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
 
 {% api-method method="put" host="https://localhost:7021" path="/api/kv/:key" %}
 {% api-method-summary %}
@@ -80,7 +81,7 @@ API authentification JSON Web Token
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="Raw Body" type="string" required=true %}
-Raw body (Plain text, JSON, ...) or raw binary content
+Raw body \(Plain text, JSON, ...\) or raw binary content
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -91,7 +92,7 @@ Raw body (Plain text, JSON, ...) or raw binary content
 Data was successfully updated.
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "message": "The specified key was successfully updated."
 }
@@ -103,7 +104,7 @@ Data was successfully updated.
 Data was successfully created.
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "message": "The specified key was successfully created."
 }
@@ -115,7 +116,7 @@ Data was successfully created.
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "message": "You are not allowed to perform this action."
 }
@@ -127,7 +128,7 @@ Data was successfully created.
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "message": "The specified key cannot be updated."
 }
@@ -136,7 +137,6 @@ Data was successfully created.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
 
 {% api-method method="delete" host="https://localhost:7021" path="/api/kv/:key" %}
 {% api-method-summary %}
@@ -168,7 +168,7 @@ API authentification JSON Web Token
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "message": "The specified key and its data was successfully deleted."
 }
@@ -180,7 +180,7 @@ API authentification JSON Web Token
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "message": "You are not allowed to perform this action."
 }
@@ -192,7 +192,7 @@ API authentification JSON Web Token
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "message": "The specified key does not exists."
 }
@@ -201,7 +201,6 @@ API authentification JSON Web Token
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
 
 {% api-method method="head" host="https://localhost:7021" path="/api/kv/:key" %}
 {% api-method-summary %}
@@ -233,7 +232,7 @@ API authentification JSON Web Token
 The specified key is initialized.
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "message": "The specified key is initialized."
 }
@@ -245,7 +244,7 @@ The specified key is initialized.
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "message": "You are not allowed to perform this action."
 }
@@ -257,7 +256,7 @@ The specified key is initialized.
 
 {% endapi-method-response-example-description %}
 
-```json
+```javascript
 {
   "message": "The specified key does not exists."
 }
@@ -266,7 +265,6 @@ The specified key is initialized.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
 
 {% api-method method="patch" host="https://localhost:7021" path="/api/kv/:key" %}
 {% api-method-summary %}
@@ -304,10 +302,11 @@ Operation to perform \(lock, unlock etc\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+

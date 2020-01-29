@@ -1,5 +1,7 @@
 ---
-description: Lucid embeds a Web UI written in Vue.js. It's a dashboard made to easily manage your node.
+description: >-
+  Lucid embeds a Web UI written in Vue.js. It's a dashboard made to easily
+  manage your node.
 ---
 
 # About the WebUI
@@ -16,3 +18,4 @@ This dashboard allows you, for example, to:
 * Manage ACLs or Encryption
 
 ![Screenshot of Marathon Software](../.gitbook/assets/screenshot-2016-10-17-10.47.37.png)
+
