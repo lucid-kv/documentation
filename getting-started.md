@@ -48,3 +48,4 @@ SUBCOMMANDS:
     store       Play with the KV store (get/set)
     tokens      Manage JWT Tokens (issue, revoke etc.)
 ```
+

@@ -11,3 +11,4 @@ From the begining, we want to add a WebSocket support to Lucid. This will be use
 ### WebSocket vs EventSource ?
 
 At the moment we do not have chosen and we give ourselves the time to think about it.
+
