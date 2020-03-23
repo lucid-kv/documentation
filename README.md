@@ -52,10 +52,5 @@ Lucid is Written in Rust 🦀, powered by [Clint.Network](https://twitter.com/cl
 
 See [CONTRIBUTING.md](https://github.com/lucid-kv/lucid/blob/master/CONTRIBUTING.md) for best practices and instructions on setting up your development environment to work on Lucid.
 
-### Make a Donation
-
-* [![Paypal](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/paypal.png)](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/paypal.png) Paypal: [Donate](http://paypal.me/clintnetwork)
-* [![btc](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/bitcoin.png)](https://raw.githubusercontent.com/reek/anti-adblock-killer/gh-pages/images/bitcoin.png) Bitcoin: 3BxEYn4RZ3iYETcFpN7nA6VqCY4Hz1tSUK
-
 {% embed url="https://github.com/lucid-kv" caption="" %}
 
