@@ -9,7 +9,7 @@ description: Lucid node production deployement guide.
 You need to download and copy the `lucid` binary to the `/usr/bin/` directory. See [latest Github release](https://github.com/clintnetwork/lucid/releases/latest).
 
 ```bash
-$ wget https://github.com/clintnetwork/lucid/releases/latest/download/lucid.zip
+$ wget https://github.com/lucid-kv/lucid/releases/latest/download/lucid.zip
 $ tar -xvf lucid.zip
 $ mv lucid /usr/bin/
 $ rm -rf lucid.zip

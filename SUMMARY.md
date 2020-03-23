@@ -12,7 +12,7 @@
 ## More Informations
 
 * [About the WebUI](more-informations/about-the-webui.md)
-* [About WebSocket](more-informations/about-websocket.md)
+* [About Server-Sent Event](more-informations/about-websocket.md)
 
 ## Other Resources
 

@@ -9,7 +9,7 @@ description: This is the start guide for a Linux user.
 Firstly, download and extract the archive from the latest [GitHub release](https://github.com/clintnetwork/lucid/releases/latest).
 
 ```bash
-$ wget https://github.com/clintnetwork/lucid/releases/latest/download/lucid.zip
+$ wget https://github.com/lucid-kv/lucid/releases/latest/download/lucid.zip
 $ tar -xvf lucid.zip
 ```
 
@@ -22,30 +22,29 @@ $ ./lucid help
 ```
 
 ```text
+
  ██╗    ██╗   ██╗ ██████╗██╗██████╗     ██╗  ██╗██╗   ██╗
  ██║    ██║   ██║██╔════╝██║██╔══██╗    ██║ ██╔╝██║   ██║
  ██║    ██║   ██║██║     ██║██║  ██║    ██╔═██╗ ╚██╗ ██╔╝
  ██████╗╚██████╔╝╚██████╗██║██████╔╝    ██║  ██╗ ╚████╔╝
  ╚═════╝ ╚═════╝  ╚═════╝╚═╝╚═════╝     ╚═╝  ╚═╝  ╚═══╝
 
-A Fast, Secure and Distributed KV store with a HTTP API.
-Written in Rust by Clint.Network (twitter.com/clint_network)
-
-USAGE:
-    lucid.exe [SUBCOMMAND]
+A Fast, Secure and Distributed KV store with an HTTP API.
+Written in Rust, Fork us on GitHub (https://github.com/lucid-kv)
 
 FLAGS:
-    -h, --help       Prints help informations
-    -v, --version    Print version information
+    -h, --help         Prints help information
+        --no-banner    Disable showing the banner on start
+    -V, --version      Prints version information
+
+OPTIONS:
+    -c, --config <config>    Specify the Lucid configuration file
 
 SUBCOMMANDS:
-    cli         Spawn to the command line interface
     help        Prints this message or the help of the given subcommand(s)
-    init        Initialize the Lucid cluster and generate configuration file
-    members     Manage members of the cluster
+    init        Initialize Lucid and generate configuration file
     server      Run a new Lucid server instance
-    settings    Manage Lucid configuration file
-    store       Play with the KV store (get/set)
-    tokens      Manage JWT Tokens (issue, revoke etc.)
+    settings    Manage the Lucid configuration file
+
 ```
 

@@ -2,7 +2,7 @@
 description: Why do we want to support WebSockets in Lucid for ?
 ---
 
-# About WebSocket
+# About Server-Sent Event
 
 ## Introduction
 
