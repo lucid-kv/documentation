@@ -9,11 +9,6 @@
 * [API Documentation](docs/api.md)
 * [Production Deployment](docs/production-deployment.md)
 
-## More Informations
-
-* [About the WebUI](more-informations/about-the-webui.md)
-* [About Server-Sent Event](more-informations/about-websocket.md)
-
 ## Other Resources
 
 * [Lucid KV Website](https://lucid-kv.store/)

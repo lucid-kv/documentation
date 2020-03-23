@@ -39,11 +39,11 @@ $ docker run -v lucid.yml:/etc/lucid/lucid.yml lucidkv/lucid
 
 ## About Development
 
-Lucid is Written in Rust 🦀, powered by [Clint.Network](https://twitter.com/clint_network) and published under the [MIT License](https://github.com/clintnetwork/lucid/blob/master/LICENSE.md).
+Lucid is Written in Rust 🦀, initiated by [Clint.Network](https://twitter.com/clint_network) and published under the [MIT License](https://github.com/clintnetwork/lucid/blob/master/LICENSE.md).
 
 | Name / Nickname | Email | Role |
 | :--- | :--- | :--- |
-| Clint Mourlevat | [me@clint.network](mailto:me@clint.network) | Lucid Founder |
+| Clint Mourlevat | [me@clint.network](mailto:me@clint.network) | Core Development |
 | Jonathan Serra | [jonathan@blocs.fr](mailto:jonathan@blocs.fr) | Core Development |
 | CephalonRho | [CephalonRho@gmail.com](mailto:CephalonRho@gmail.com) | Core Development |
 | Rigwild | [me@rigwild.dev](mailto:me@rigwild.dev) | Web UI Development |
